@@ -1,0 +1,15 @@
+{
+    "name": "app/garden",
+    "description": "Cats",
+    "authors": [{
+        "name": "Marek Jankovskij",
+        "email": "marek@jankovskij.lt"
+    }],
+    "autoload": {
+        "psr-4": {
+            "": "class/",
+            "Controller\\": "class/controllers"
+        }
+    },
+    "require": {}
+}
