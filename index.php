@@ -10,7 +10,7 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 date_default_timezone_set('Europe/Vilnius');
-define('INSTALL_DIR', '/cats/');
+define('INSTALL_DIR', '/');
 define('URL', 'http://' . $_SERVER['SERVER_NAME'] . INSTALL_DIR);
 define('URI', explode('/', str_replace(INSTALL_DIR, '', $_SERVER['REQUEST_URI'])));
 define('DIR', __DIR__);
