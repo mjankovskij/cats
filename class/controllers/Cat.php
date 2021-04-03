@@ -37,7 +37,7 @@ class Cat
 
     public function getCatKey($name)
     {
-        foreach (explode('\n', $this->file->read()) as $key => $item) {
+        foreach (preg_split('~\R~', $this->file->read()) as $key => $item) {
             if ($item === $name) {
                 return $key;
             }

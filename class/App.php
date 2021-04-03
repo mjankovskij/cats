@@ -19,7 +19,7 @@ class App
         } elseif (
             isset(self::$uri) &&
             is_numeric(self::$uri) &&
-            self::$uri >= 0 &&
+            self::$uri > 0 &&
             self::$uri <= 1000000
         ) {
             return (new Controller\Cat)->render($data);
